@@ -1,0 +1,60 @@
+2022/03/26 04:15:13 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2022/03/26 04:15:14 INFO mlflow.store.db.utils: Updating database tables
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 451aebb31d03, add metric step
+INFO  [alembic.runtime.migration] Running upgrade 451aebb31d03 -> 90e64c465722, migrate user column to tags
+INFO  [alembic.runtime.migration] Running upgrade 90e64c465722 -> 181f10493468, allow nulls for metric values
+INFO  [alembic.runtime.migration] Running upgrade 181f10493468 -> df50e92ffc5e, Add Experiment Tags Table
+INFO  [alembic.runtime.migration] Running upgrade df50e92ffc5e -> 7ac759974ad8, Update run tags with larger limit
+INFO  [alembic.runtime.migration] Running upgrade 7ac759974ad8 -> 89d4b8295536, create latest metrics table
+INFO  [89d4b8295536_create_latest_metrics_table_py] Migration complete!
+INFO  [alembic.runtime.migration] Running upgrade 89d4b8295536 -> 2b4d017a5e9b, add model registry tables to db
+INFO  [2b4d017a5e9b_add_model_registry_tables_to_db_py] Adding registered_models and model_versions tables to database.
+INFO  [2b4d017a5e9b_add_model_registry_tables_to_db_py] Migration complete!
+INFO  [alembic.runtime.migration] Running upgrade 2b4d017a5e9b -> cfd24bdc0731, Update run status constraint with killed
+INFO  [alembic.runtime.migration] Running upgrade cfd24bdc0731 -> 0a8213491aaa, drop_duplicate_killed_constraint
+INFO  [alembic.runtime.migration] Running upgrade 0a8213491aaa -> 728d730b5ebd, add registered model tags table
+INFO  [alembic.runtime.migration] Running upgrade 728d730b5ebd -> 27a6a02d2cf1, add model version tags table
+INFO  [alembic.runtime.migration] Running upgrade 27a6a02d2cf1 -> 84291f40a231, add run_link to model_version
+INFO  [alembic.runtime.migration] Running upgrade 84291f40a231 -> a8c4a736bde6, allow nulls for run_id
+INFO  [alembic.runtime.migration] Running upgrade a8c4a736bde6 -> 39d1c3be5f05, add_is_nan_constraint_for_metrics_tables_if_necessary
+INFO  [alembic.runtime.migration] Running upgrade 39d1c3be5f05 -> c48cb773bb87, reset_default_value_for_is_nan_in_metrics_table_for_mysql
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+[2022-03-26 04:15:14 +0000] [4307] [INFO] Starting gunicorn 20.1.0
+[2022-03-26 04:15:14 +0000] [4307] [INFO] Listening at: http://0.0.0.0:5000 (4307)
+[2022-03-26 04:15:14 +0000] [4307] [INFO] Using worker: sync
+[2022-03-26 04:15:14 +0000] [4310] [INFO] Booting worker with pid: 4310
+[2022-03-26 04:15:14 +0000] [4311] [INFO] Booting worker with pid: 4311
+[2022-03-26 04:15:14 +0000] [4312] [INFO] Booting worker with pid: 4312
+[2022-03-26 04:15:14 +0000] [4313] [INFO] Booting worker with pid: 4313
+[2022-03-26 04:53:08 +0000] [4311] [INFO] Worker exiting (pid: 4311)
+[2022-03-26 04:53:08 +0000] [4307] [INFO] Handling signal: term
+[2022-03-26 04:53:08 +0000] [4312] [INFO] Worker exiting (pid: 4312)
+[2022-03-26 04:53:08 +0000] [4313] [INFO] Worker exiting (pid: 4313)
+[2022-03-26 04:53:08 +0000] [4310] [INFO] Worker exiting (pid: 4310)
+[2022-03-26 04:53:08 +0000] [4307] [WARNING] Worker with pid 4312 was terminated due to signal 15
+[2022-03-26 04:53:08 +0000] [4307] [WARNING] Worker with pid 4313 was terminated due to signal 15
+[2022-03-26 04:53:08 +0000] [4307] [WARNING] Worker with pid 4311 was terminated due to signal 1
+[2022-03-26 04:53:08 +0000] [4307] [WARNING] Worker with pid 4310 was terminated due to signal 1
+[2022-03-26 04:53:08 +0000] [4307] [INFO] Shutting down: Master
+[2022-03-26 20:13:21 +0000] [5126] [INFO] Starting gunicorn 20.1.0
+[2022-03-26 20:13:21 +0000] [5126] [INFO] Listening at: http://0.0.0.0:5000 (5126)
+[2022-03-26 20:13:21 +0000] [5126] [INFO] Using worker: sync
+[2022-03-26 20:13:21 +0000] [5129] [INFO] Booting worker with pid: 5129
+[2022-03-26 20:13:21 +0000] [5130] [INFO] Booting worker with pid: 5130
+[2022-03-26 20:13:21 +0000] [5131] [INFO] Booting worker with pid: 5131
+[2022-03-26 20:13:21 +0000] [5132] [INFO] Booting worker with pid: 5132
+[2022-03-27 00:57:09 +0000] [5126] [WARNING] Worker with pid 5132 was terminated due to signal 1
+[2022-03-27 00:57:09 +0000] [5126] [WARNING] Worker with pid 5129 was terminated due to signal 1
+[2022-03-27 00:57:09 +0000] [5126] [WARNING] Worker with pid 5131 was terminated due to signal 1
+[2022-03-27 00:57:09 +0000] [5126] [WARNING] Worker with pid 5130 was terminated due to signal 1
+[2022-03-27 00:57:09 +0000] [6050] [INFO] Booting worker with pid: 6050
+[2022-03-27 00:57:09 +0000] [5126] [INFO] Handling signal: hup
+[2022-03-27 00:57:09 +0000] [5126] [INFO] Hang up: Master
+[2022-03-27 00:57:09 +0000] [6051] [INFO] Booting worker with pid: 6051
+[2022-03-27 00:57:09 +0000] [6052] [INFO] Booting worker with pid: 6052
+[2022-03-27 00:57:09 +0000] [6053] [INFO] Booting worker with pid: 6053
+[2022-03-27 00:57:09 +0000] [6054] [INFO] Booting worker with pid: 6054
+[2022-03-27 00:57:10 +0000] [6050] [INFO] Worker exiting (pid: 6050)
