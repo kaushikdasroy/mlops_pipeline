@@ -18,10 +18,10 @@ mlflow_config:
   experiment_name: model_iteration1
   run_name: random_forest
   registered_model_name: random_forest_model
-  remote_server_uri: http://54.218.226.80:5000
+  remote_server_uri: http://34.213.11.188:5000
  
 random_forest: 
-  max_depth: 12
+  max_depth: 10
   n_estimators: 30
 
 model_dir: models/model.joblib

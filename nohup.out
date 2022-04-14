@@ -58,3 +58,20 @@ INFO  [alembic.runtime.migration] Will assume transactional DDL.
 [2022-03-27 00:57:09 +0000] [6053] [INFO] Booting worker with pid: 6053
 [2022-03-27 00:57:09 +0000] [6054] [INFO] Booting worker with pid: 6054
 [2022-03-27 00:57:10 +0000] [6050] [INFO] Worker exiting (pid: 6050)
+[2022-03-28 04:42:50 +0000] [6053] [INFO] Worker exiting (pid: 6053)
+[2022-03-28 04:42:50 +0000] [5126] [INFO] Handling signal: term
+[2022-03-28 04:42:50 +0000] [6054] [INFO] Worker exiting (pid: 6054)
+[2022-03-28 04:42:50 +0000] [6051] [INFO] Worker exiting (pid: 6051)
+[2022-03-28 04:42:50 +0000] [6052] [INFO] Worker exiting (pid: 6052)
+[2022-03-28 04:42:50 +0000] [5126] [WARNING] Worker with pid 6054 was terminated due to signal 15
+[2022-03-28 04:42:51 +0000] [5126] [WARNING] Worker with pid 6052 was terminated due to signal 1
+[2022-03-28 04:42:51 +0000] [5126] [WARNING] Worker with pid 6051 was terminated due to signal 1
+[2022-03-28 04:42:51 +0000] [5126] [WARNING] Worker with pid 6053 was terminated due to signal 1
+[2022-03-28 04:42:51 +0000] [5126] [INFO] Shutting down: Master
+[2022-04-14 17:44:05 +0000] [6154] [INFO] Starting gunicorn 20.1.0
+[2022-04-14 17:44:05 +0000] [6154] [INFO] Listening at: http://0.0.0.0:5000 (6154)
+[2022-04-14 17:44:05 +0000] [6154] [INFO] Using worker: sync
+[2022-04-14 17:44:05 +0000] [6157] [INFO] Booting worker with pid: 6157
+[2022-04-14 17:44:05 +0000] [6158] [INFO] Booting worker with pid: 6158
+[2022-04-14 17:44:05 +0000] [6159] [INFO] Booting worker with pid: 6159
+[2022-04-14 17:44:05 +0000] [6160] [INFO] Booting worker with pid: 6160
