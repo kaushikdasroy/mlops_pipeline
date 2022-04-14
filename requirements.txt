@@ -13,3 +13,7 @@ numpy
 joblib
 gunicorn
 mlflow
+sklearn
+pandas
+dvc
+cookiecutter
