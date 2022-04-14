@@ -10,7 +10,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: myenvironment
     steps:
     - uses: actions/checkout@v2
       with:
@@ -19,6 +18,13 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
+    - name: Test
+      env:
+        TEST_GITHUB_TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
+        TEST_SECRET: ${{ secrets.HEROKU_APP_NAME }}
+      run: |
+        echo ${#TEST_GITHUB_TOKEN}
+        echo ${#TEST_SECRET}
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
